@@ -6,6 +6,10 @@ import jakarta.persistence.*;
 @Table(name="productos")
 public class Producto {
 
+    /*
+        ======== CLAVES ATRIBUTOS ==========
+    */
+
     @Id // -> Indica que la propiedad corresponde a la clave primaria.
     @GeneratedValue(strategy = GenerationType.IDENTITY) // -> Indica que la clave primaria es autoincremental
     @Column(name="id_producto") // -> Se utiliza cuando el nombre del campo es diferente al nombre de la propiedad
@@ -25,6 +29,17 @@ public class Producto {
     @Column(name="cantidad_stock")
     private Integer cantidadStock;
 
+    /*
+        ======== CLAVES FORANEAS ==========
+    */
+
+    @ManyToOne
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    private Categoria categoria;
+
+    /*
+        ======== GETTER AND SETTER ==========
+    */
     public Integer getIdProducto() {
         return idProducto;
     }

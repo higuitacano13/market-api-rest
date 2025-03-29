@@ -1,10 +1,15 @@
 package com.market.java.persistence.entities;
 
 import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="categorias")
 public class Categoria {
+
+    /*
+        ======== CLAVES ATRIBUTOS ==========
+    */
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,6 +19,16 @@ public class Categoria {
     private String descripcion;
 
     private String estado;
+
+    /*
+        ======== CLAVES FORANEAS ==========
+    */
+    @OneToMany(mappedBy = "categoria")
+    private List<Producto> productos;
+
+    /*
+        ======== GETTER AND SETTER ==========
+    */
 
     public Integer getIdCategoria() {
         return idCategoria;
