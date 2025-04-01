@@ -29,6 +29,8 @@ public class Producto {
     @Column(name="cantidad_stock")
     private Integer cantidadStock;
 
+    private Boolean estado;
+
     /*
         ======== CLAVES FORANEAS ==========
     */
@@ -96,5 +98,5 @@ public class Producto {
         this.estado = estado;
     }
 
-    private Boolean estado;
+
 }
