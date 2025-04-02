@@ -4,7 +4,7 @@ import com.market.java.domain.Product;
 import java.util.List;
 import java.util.Optional;
 
-public interface productRepository {
+public interface ProductRepository {
     List<Product> getAll();
     Optional<List<Product>> getByCategory(int idCategory);
     Optional<List<Product>> getScarseProducts(int quantity);
