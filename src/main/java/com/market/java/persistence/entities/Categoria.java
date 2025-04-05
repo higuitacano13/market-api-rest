@@ -19,16 +19,23 @@ public class Categoria {
     private String descripcion;
 
     private String estado;
-
     /*
-        ======== CLAVES FORANEAS ==========
-    */
+            ======== CLAVES FORANEAS ==========
+        */
     @OneToMany(mappedBy = "categoria")
     private List<Producto> productos;
 
     /*
         ======== GETTER AND SETTER ==========
     */
+
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
+    }
 
     public Integer getIdCategoria() {
         return idCategoria;
