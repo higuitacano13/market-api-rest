@@ -2,7 +2,7 @@ package com.market.java.persistence;
 
 import com.market.java.domain.Product;
 import com.market.java.domain.repository.ProductRepository;
-import com.market.java.domain.repository.mapper.ProductMapper;
+import com.market.java.persistence.mapper.ProductMapper;
 import com.market.java.persistence.crud.ProductoCrudRepository;
 import com.market.java.persistence.entities.Producto;
 import org.springframework.beans.factory.annotation.Autowired;

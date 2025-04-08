@@ -1,4 +1,4 @@
-package com.market.java.domain.repository.mapper;
+package com.market.java.persistence.mapper;
 
 import com.market.java.domain.Product;
 import com.market.java.persistence.entities.Producto;
