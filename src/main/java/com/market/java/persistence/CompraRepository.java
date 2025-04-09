@@ -6,6 +6,7 @@ import com.market.java.persistence.crud.CompraCrudRepository;
 import com.market.java.persistence.entities.Compra;
 import com.market.java.persistence.mapper.PurchaseMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public class CompraRepository implements PurchaseRepository {
     @Autowired
     private CompraCrudRepository compraCrudRepository;
 
+    @Qualifier("purchaseMapperImpl")
     @Autowired
     private PurchaseMapper mapper;
 

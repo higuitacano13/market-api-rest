@@ -11,7 +11,7 @@ public class Cliente {
     @Id
     private String id;
     private String nombre;
-    private String apellido;
+    private String apellidos;
     private String celular;
     private String direccion;
 
@@ -45,12 +45,12 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellidos(String apellido) {
+        this.apellidos = apellido;
     }
 
     public String getCelular() {

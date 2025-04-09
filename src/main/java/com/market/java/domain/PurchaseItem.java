@@ -1,17 +1,17 @@
 package com.market.java.domain;
 
 public class PurchaseItem {
-    private int purchaseId;
+    private int productId;
     private int quantity;
     private double total;
     private boolean active;
 
-    public int getPurchaseId() {
-        return purchaseId;
+    public int getProductId() {
+        return productId;
     }
 
-    public void setPurchaseId(int purchaseId) {
-        this.purchaseId = purchaseId;
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
     public int getQuantity() {
