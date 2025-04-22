@@ -49,7 +49,7 @@ El proyecto utiliza Spring Data JPA para la persistencia con PostgreSQL, y MapSt
 **7. Consultar Compras por Cliente** 
 
 - Devuelve una lista de todas las compras realizadas por un cliente en formato JSON.
-- - Si el cliente no ha realizado ninguna compra, retorna HTTP 404 (Not Found).
+- Si el cliente no ha realizado ninguna compra, retorna HTTP 404 (Not Found).
 - Retorna HTTP 200 (OK).
 
 **8. Crear una Compra** 
